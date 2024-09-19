@@ -13,3 +13,7 @@ interface CustomProps extends StyledSystemDefaultProps {}
 export const Wrapper = styled('div')<CustomProps>`
   ${space};
 `;
+
+export const LinkWrapper = styled('a')<CustomProps>`
+  ${space};
+`;

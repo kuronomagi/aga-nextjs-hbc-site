@@ -972,7 +972,15 @@ phone-panel
   line-height: 47px;
   letter-spacing: 0.1;
   color: #417657;
+  pointer-events: none;
 }
+/* sp */
+@media screen and (max-width: 767px) {
+  .phone-panel-body-phone-text {
+    position: inherit;
+  }
+}
+
 @media screen and (max-width: 368px) {
   .phone-panel-body-phone-text {
     font-size: 30px;

@@ -20,13 +20,15 @@ export interface CustomProps extends StyledSystemDefaultProps {
   wrapperClassName?: string;
 }
 
-const SLIDES_COUNT = 2;
+const SLIDES_COUNT = 4;
 const INTERVAL_TIME = 1500;
 
 // NOTE: ここを変更する時はアニメーションのフェード動作チェックをすること
 const tenjinSlides: any = [
   { id: 0, url: LPPhotos.mainPhoto001.src, alt: '' },
   { id: 1, url: LPPhotos.mainPhoto002.src, alt: '' },
+  { id: 2, url: LPPhotos.mainPhoto003.src, alt: '' },
+  { id: 3, url: LPPhotos.mainPhoto004.src, alt: '' },
 ];
 
 export const MainPhotoFadeCarousel: React.FC<CustomProps> = ({

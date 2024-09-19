@@ -53,7 +53,8 @@ export const BANNER_2407_001 = `${assetHost}/share/banners/banner_2407_001 2.png
 // import keyvisualGif from '~/assets/images/top/keyvisual.gif';
 import mainPhoto001 from '~/assets/images/top/top-slide-001.png';
 import mainPhoto002 from '~/assets/images/top/top-slide-002.png';
-import mainPhoto003 from '~/assets/images/top/top-slide-001.png';
+import mainPhoto003 from '~/assets/images/top/top-slide-003.png';
+import mainPhoto004 from '~/assets/images/top/top-slide-004.png';
 
 import topTexts from '~/assets/images/top/top-texts.png';
 import topText001 from '~/assets/images/top/text-001.png';
@@ -68,6 +69,7 @@ export const LPPhotos = {
   mainPhoto001: mainPhoto001,
   mainPhoto002: mainPhoto002,
   mainPhoto003: mainPhoto003,
+  mainPhoto004: mainPhoto004,
 
   topTexts: topTexts,
 

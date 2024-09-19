@@ -53,4 +53,4 @@ export const unIndexParams = {
   },
 };
 
-export const canonicalHost = process.env.NEXT_PUBLIC_CLIENT_PATH || 'https://tenjin-hbc.jp';
+export const canonicalHost = process.env.NEXT_PUBLIC_CLIENT_PATH || 'https://aga.tenjin-hbc.jp';

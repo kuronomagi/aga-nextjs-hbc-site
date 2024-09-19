@@ -26,7 +26,6 @@ import { LPPhotos } from '~/constants/images';
 import Footer from '~/components/layouts/Footer';
 
 const myEnv = process.env.NEXT_PUBLIC_MY_ENV;
-const assetHost = process.env.NEXT_PUBLIC_CLOUDFRONT_ASSETS_HOST;
 const OPTIONS: EmblaOptionsType = { align: 'center', dragFree: false, containScroll: 'trimSnaps' };
 
 const femaleA001 = [
@@ -255,7 +254,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
         <section>
           <MainPhotoFadeCarousel />
 
-          <Space mt={['30px', '65px', '35px']} />
+          <Space mt={['30px', '65px', '100px']} />
 
           <section className={styles['contents-inner']}>
             <div className={styles['panel']}>
@@ -735,7 +734,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
             <div style={{ marginLeft: 'auto', marginRight: 'auto', paddingLeft: '4%', paddingRight: '4%' }}>
               <RoundedWithArrowButton
                 text='詳しくはこちらから'
-                onClick={() => null}
+                href={'https://hair.tenjin-hbc.jp/'}
                 layoutClassName='secondary'
                 sizeClassName='large'
                 className='full-width'
