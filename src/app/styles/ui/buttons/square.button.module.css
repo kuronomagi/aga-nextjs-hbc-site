@@ -1,0 +1,64 @@
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* ----- red ----- */
+.wrapper.red .inner {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+.wrapper.red .text {
+  color: var(--white);
+}
+
+.wrapper.red:hover .inner {
+  background-color: #ff7272;
+  border: 1px solid #ff7272;
+}
+
+/* ----- dark ----- */
+.wrapper.dark .inner {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--medium-gray);
+}
+.wrapper.dark .text {
+  color: var(--white);
+}
+
+.wrapper.dark:hover .inner {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 16.5px 15px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .inner {
+    padding: 12.5px 20px;
+  }
+}
+
+.text {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

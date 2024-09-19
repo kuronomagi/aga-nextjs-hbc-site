@@ -1,0 +1,374 @@
+/* =========================
+STICKY
+========================= */
+.sticky-wrapper {
+}
+
+.sticky-inner {
+  z-index: 10;
+}
+
+/* =========================
+.buttons-wrapper
+========================= */
+.buttons-scrollbar-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.buttons-scrollbar-inner {
+  overflow: hidden;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .buttons-wrapper-outer {
+    overflow: hidden;
+  }
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .buttons-wrapper {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+/* 横スクロールで必須 */
+@media screen and (max-width: 767px) {
+  .buttons-wrapper > * {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+/* =========================
+.tab-wrappper
+========================= */
+.tab-wrappper {
+  position: relative;
+}
+
+/* =========================
+.tab-inner
+========================= */
+.tab-inner {
+}
+
+/* =========================
+.tab-content-wrapper
+========================= */
+.tab-content-wrapper {
+}
+
+.tab-content-inner {
+  position: relative;
+}
+
+/* ==================================================
+TAB HEAD
+================================================== */
+/* =========================
+.tab-head-wrapper
+========================= */
+.tab-head-wrapper {
+}
+
+/* =========================
+.tab-head-inner
+========================= */
+.tab-head-inner {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* =========================
+.tab-head
+========================= */
+.tab-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* tab */
+@media screen and (max-width: 1065px) {
+  .tab-head {
+    padding: 0 4%;
+  }
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .tab-head {
+    padding: 0 4%;
+  }
+}
+
+/* =========================
+.tab-head-item
+========================= */
+.tab-head-item {
+  width: 267px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--theme-color-nonary);
+  color: #a3a3a3;
+  text-align: center;
+  cursor: pointer;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .tab-head-item {
+    width: 120px;
+  }
+}
+
+.tab-head-item:hover {
+  /* opacity: 0.8; */
+  background-color: var(--theme-color-tertiary);
+}
+.tab-head-item.is-current {
+  background-color: #fff !important;
+  color: var(--theme-color-secondary);
+}
+
+/* =========================
+.tab-head-text
+========================= */
+.tab-head-text {
+  display: inline-block;
+  width: 100%;
+  padding: 10.5px 10px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.02rem;
+  color: var(--theme-color-secondary);
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .tab-head-text {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+/* ==================================================
+SIDE MENU
+================================================== */
+
+/* =========================
+.tab-side-menu
+========================= */
+.tab-side-menu {
+  position: fixed;
+  top: 480px;
+  left: 4%;
+  z-index: 1;
+}
+
+/* =========================
+.tab-side-menu-inner
+========================= */
+.tab-side-menu-inner {
+  width: 100%;
+  max-width: 240px;
+}
+
+/* =========================
+.tab-side-menu-head
+========================= */
+.tab-side-menu-head {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--theme-color-denary);
+  padding: 11.5px 25px;
+}
+
+/* =========================
+.tab-side-menu-title
+========================= */
+.tab-side-menu-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--theme-color-secondary);
+  line-height: 25px;
+}
+
+/* =========================
+.tab-side-menu-body
+========================= */
+.tab-side-menu-body {
+  padding: 20px 25px;
+  background-color: var(--theme-color-nonary);
+}
+
+/* =========================
+.tab-side-menu-wrapper
+========================= */
+.tab-side-menu-wrapper > .tab-side-menu-link {
+  margin-top: 7.5px;
+}
+.tab-side-menu-wrapper > .tab-side-menu-link:first-child {
+  margin-top: 0;
+}
+
+/* =========================
+.tab-side-menu-link
+========================= */
+.tab-side-menu-link {
+  position: relative;
+  display: block;
+  /* display: grid; */
+  /* justify-content: flex-start; */
+  /* grid-template-columns: 7px auto; */
+  /* align-items: center; */
+  /* column-gap: 7px; */
+  padding-left: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.tab-side-menu-link:hover .tab-side-menu-link-text {
+  color: var(--theme-color-primary);
+}
+
+.tab-side-menu-link:hover .tab-side-menu-nav-arrow {
+  left: 7px;
+  /* transform: rotate(35deg); */
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+}
+
+.tab-side-menu-link:hover .tab-side-menu-nav-arrow svg {
+  fill: var(--theme-color-primary);
+}
+
+/* =========================
+.tab-side-menu-nav-arrow
+========================= */
+.tab-side-menu-nav-arrow {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  padding-top: 5px;
+}
+.tab-side-menu-nav-arrow svg {
+  display: block;
+  width: 7px;
+  fill: var(--theme-color-secondary);
+}
+
+/* =========================
+.tab-side-menu-link-text
+========================= */
+.tab-side-menu-link-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--theme-color-secondary);
+  line-height: 30px;
+}
+
+/* ==================================================
+.scroll-var-nav
+================================================== */
+.scroll-var-nav {
+}
+
+.scroll-var-nav-inner {
+  overflow: hidden;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .scroll-var-nav-inner {
+    height: 44px;
+  }
+}
+
+.scroll-var-nav-wrapper {
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-right: 4%;
+}
+
+.scroll-var-nav-link {
+  display: inline-block;
+  border: 2px solid #dedede;
+  border-radius: 13px;
+  padding: 11px 13.35px;
+  background-color: #fff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.scroll-var-nav-link-text {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.02rem;
+}
+
+/* ==================================================
+tab-children
+================================================== */
+.tab-children {
+  width: 100%;
+  background-color: #fff;
+}
+/* tab */
+@media screen and (max-width: 1065px) {
+  .tab-children {
+    padding: 0 0 0 4%;
+  }
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .tab-children {
+    padding: 22px 0 0 4%;
+  }
+}
+
+.tab-children-content {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .tab-children-content {
+    padding: 20px 0 0;
+  }
+}
+
+/* ==================================================
+tab-text-description
+================================================== */
+/* sp */
+@media screen and (max-width: 767px) {
+  .tab-text-description {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--theme-color-septenary);
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+}

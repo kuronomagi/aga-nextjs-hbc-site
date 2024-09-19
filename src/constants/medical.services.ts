@@ -1,0 +1,17 @@
+export const services = [
+  { text: '栄養療法' },
+  { text: '点滴・注射' },
+  { text: '医療脱毛' },
+  { text: 'E-Max' },
+  { text: 'ハイドラフェイシャル' },
+  { text: 'ケミカルピーリング' },
+  { text: 'Picoレーザー' },
+  { text: 'エレクトロポレーション' },
+  { text: '毛髪再生' },
+  { text: '真皮線維芽細胞' },
+  { text: '脂肪由来幹細胞' },
+  { text: 'PRP療法' },
+  { text: 'HIFU' },
+  { text: 'ピアス' },
+  { text: 'エムセラ' },
+];

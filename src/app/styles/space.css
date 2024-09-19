@@ -1,0 +1,164 @@
+.side-space {
+  padding: 0 4%;
+}
+
+@media screen and (max-width: 767px) {
+  .sp-side-space {
+    padding: 0 4%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .without-pc-side-space {
+    padding: 0 4%;
+  }
+}
+
+.without-pc-left-side-space {
+  @media screen and (max-width: 1050px) {
+    padding-left: 4%;
+  }
+}
+
+.without-pc-right-side-space {
+  @media screen and (max-width: 1050px) {
+    padding-right: 4%;
+  }
+}
+
+.vertical-padding-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.vertical-padding-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.vertical-padding-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.vertical-padding-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.vertical-padding-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.vertical-padding-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.horizontal-padding-5 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.horizontal-padding-10 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.horizontal-padding-15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.horizontal-padding-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.horizontal-padding-25 {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.horizontal-padding-30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .horizontal-sp-padding-4p {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .horizontal-sp-padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .vertical-sp-padding-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .vertical-sp-padding-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .vertical-sp-padding-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .vertical-sp-padding-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .vertical-sp-padding-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .vertical-sp-padding-25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .vertical-sp-padding-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .horizontal-sp-padding-5 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .horizontal-sp-padding-10 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .horizontal-sp-padding-15 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .horizontal-sp-padding-20 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .horizontal-sp-padding-25 {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .horizontal-sp-padding-30 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

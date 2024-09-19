@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  padding: 20px 15px 25px;
+  overflow-y: scroll;
+
+  background-color: #1c2926;
+  background-image: url('~/src/assets/images/base-bg@x2.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .inner {
+    padding: 20px 25px 25px;
+  }
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .inner {
+    background-size: inherit;
+    background-position: left;
+  }
+}
+
+.inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  opacity: 0.2;
+  pointer-events: none; /* 疑似要素がクリックイベントをブロックしないように */
+  box-sizing: border-box; /* ボーダーを内側に含める */
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+}

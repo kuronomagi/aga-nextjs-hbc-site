@@ -1,0 +1,23 @@
+
+.wrapper {
+  position: relative;
+  line-height: 18px;
+}
+
+.link {
+  display: inline;
+  color: #34C1FF;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+.link:hover {
+  text-decoration: none;
+}
+
+.text {
+  display: inline;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  line-height: 18px;
+}

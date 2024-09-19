@@ -1,0 +1,92 @@
+.wrapper {
+  /* position: relative; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /* headerの z-index: 1; より下にすること */
+  z-index: 11;
+  /* right: 20px; */
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: none;
+  }
+}
+
+.menu-button {
+  position: relative;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  z-index: 40;
+}
+
+.menu-contents {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: calc(100vh - 20px); */
+  height: 100%;
+  padding: 103px 4% 0;
+  z-index: 30;
+  background-color: #fff;
+  overflow-y: scroll;
+
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 1s,
+    opacity 0.1s linear;
+}
+
+.menu-contents.open {
+  width: 100%;
+  /* height: calc(100vh - 20px); */
+  height: 100vh;
+
+  /* NOTE: SP実機でメニューのスクロールができなくなるので消さないこと */
+  padding-bottom: 100px;
+  overflow-y: scroll;
+
+  visibility: visible;
+  transition:
+    visibility 1s,
+    opacity 0.1s linear;
+  opacity: 1;
+}
+
+.menu-wrap {
+  /* padding-right: 20px; */
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px; /* 縦 */
+  column-gap: 10px;
+}
+
+.burger-menu {
+  width: 20px;
+  height: 13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.burger-menu span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--yellow);
+  transition: all 0.3s ease;
+  border-radius: 100px;
+}
+
+.burger-menu.open span:first-child {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+
+.burger-menu.open span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.burger-menu.open {
+}

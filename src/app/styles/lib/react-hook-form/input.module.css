@@ -1,0 +1,85 @@
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17.5px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--white);
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .input-field {
+    font-size: 13px;
+  }
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .input-field {
+    font-size: 12px;
+    padding: 12.5px 20px;
+  }
+}
+
+.input-field:focus {
+  border-color: var(--yellow);
+  /* box-shadow: 0 0 0 1px var(--yellow), 0 0 0 3px var(--yellow), 0 0 0px 1000px transparent inset; */
+  box-shadow: 0 0 0 1px var(--yellow), 0 0 0 2px var(--yellow), 0 0 0px 1000px transparent inset;
+}
+
+.input-field:selected {
+  /* background-color: transparent; */
+}
+.input-field:focus,
+.input-field:-webkit-autofill,
+.input-field:autofill {
+  /* background-color: transparent; */
+}
+.input-field:autofill{
+  /* background-color: transparent !important; */
+}
+.input-field:-webkit-autofill{
+  /* background-color: transparent !important; */
+  /* -webkit-text-fill-background-color: transparent !important; */
+}
+
+.input-field.error {
+  box-shadow: 0 0 0 1px var(--red), 0 0 0 2px var(--red), 0 0 0px 1000px transparent inset;
+}
+.input-field.error:focus {
+}
+
+.label {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .label {
+    font-size: 13px;
+  }
+}
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .label {
+    font-size: 13px;
+  }
+}
+
+
+
+/* sp */
+@media screen and (max-width: 767px) {
+}

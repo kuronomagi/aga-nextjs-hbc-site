@@ -1,0 +1,328 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.wrapper.full-width {
+  width: 100%;
+}
+
+.wrapper.full-width .inner {
+  width: 100%;
+}
+
+/* ====================================
+primary
+ ==================================== */
+.wrapper.primary .inner {
+  /* background-color: var(--theme-color-tertiary);
+  border: 1px solid var(--theme-color-tertiary); */
+
+  background-color: rgba(22, 174, 103, 0.15);
+  border: 1px solid transparent;
+  /* #16AE67 */
+}
+
+.wrapper.primary .circle {
+  background-color: var(--theme-color-primary);
+}
+
+.wrapper.primary .arrow svg {
+  fill: #fff;
+}
+
+.wrapper.primary:hover .inner {
+  /* background-color: rgba(22, 174, 103, 0.45); */
+}
+
+.wrapper.primary .inner {
+  overflow: hidden;
+}
+
+.wrapper.primary .inner::after {
+  background: radial-gradient(circle, rgba(22, 174, 103, 0.75) 10%, transparent 10%) no-repeat 50%;
+}
+
+.wrapper.secondary .inner::after {
+  background: radial-gradient(circle, rgba(186, 251, 213, 0.75), 10%, transparent 10%) no-repeat 50%;
+}
+
+/* ====================================
+secondary
+==================================== */
+.wrapper.secondary .inner {
+  background-color: var(--theme-color-secondary);
+  border: 1px solid transparent;
+  /* #16AE67 */
+}
+
+.wrapper.secondary .circle {
+  background-color: #fff;
+}
+
+.wrapper.secondary .arrow svg {
+  fill: var(--theme-color-secondary);
+}
+
+.wrapper.secondary:hover .inner {
+  /* background-color: rgba(22, 174, 103, 0.45); */
+}
+
+.wrapper.secondary .inner {
+  overflow: hidden;
+}
+
+.wrapper.secondary .text {
+  color: #fff;
+}
+
+/* ====================================
+tertiary
+==================================== */
+.wrapper.tertiary .inner {
+  background-color: var(--theme-color-tertiary);
+  border: 1px solid transparent;
+  /* #16AE67 */
+}
+
+.wrapper.tertiary .circle {
+  background-color: var(--theme-color-secondary);
+}
+
+.wrapper.tertiary .arrow svg {
+  fill: #fff;
+}
+
+.wrapper.tertiary:hover .inner {
+  /* background-color: rgba(22, 174, 103, 0.45); */
+}
+
+.wrapper.tertiary .inner {
+  overflow: hidden;
+}
+
+.wrapper.tertiary .text {
+  color: var(--theme-color-senary);
+}
+
+/* ====================================
+opacity-1
+==================================== */
+.wrapper.opacity-1.primary .inner {
+  background-color: var(--theme-color-tertiary);
+}
+
+/* ====================================
+default
+==================================== */
+
+.wrapper .inner::after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  /* background: radial-gradient(circle, rgba(22, 174, 103, 0.75) 10%, transparent 10%) no-repeat 50%; */
+  transform: scale(10, 10);
+  transition:
+    transform 0.3s,
+    opacity 1s;
+  border-radius: 100px;
+
+  opacity: 0;
+}
+
+/*クリックされたあとの形状の設定*/
+.wrapper .inner:active::after {
+  transform: scale(0, 0);
+  transition: 0s;
+  opacity: 0.3;
+}
+
+/* ====================================
+ secondary
+ ====================================
+ */
+
+/* ====================================
+ tertiary
+ ====================================
+ */
+
+/* ====================================
+ large
+ ====================================
+ */
+.wrapper.large .circle {
+  width: 46px;
+  height: 46px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.large .circle {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.wrapper.large .text {
+  font-size: 21px;
+  line-height: 30px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.large .text {
+    font-size: 15px;
+  }
+}
+
+.wrapper.large .arrow,
+.wrapper.large .arrow svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.large .arrow,
+  .wrapper.large .arrow svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.wrapper.large .inner {
+  padding: 15px 60px 13px 34px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.large .inner {
+    padding: 6px 40px 7px 19px;
+  }
+}
+
+/* ====================================
+ x-large
+ ====================================
+ */
+.wrapper.x-large .circle {
+  width: 46px;
+  height: 46px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.x-large .circle {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.wrapper.x-large .text {
+  font-size: 21px;
+  line-height: 30px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.x-large .text {
+    font-size: 15px;
+  }
+}
+
+.wrapper.x-large .arrow,
+.wrapper.x-large .arrow svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.x-large .arrow,
+  .wrapper.x-large .arrow svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.wrapper.x-large .inner {
+  padding: 15px 85px 13px 55px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .wrapper.x-large .inner {
+    padding: 6px 46px 7px 30px;
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 16px 55px 14px 25px;
+  transition:
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  border-radius: 100px;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .inner {
+    padding: 16px 45px 14px 25px;
+  }
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .inner {
+    padding: 12.5px 20px;
+  }
+}
+
+.text {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 7px;
+  margin: auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+}
+
+.arrow {
+}
+
+.arrow,
+.arrow svg {
+  display: block;
+  width: 9px;
+  height: 9px;
+}

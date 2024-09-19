@@ -1,0 +1,123 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+/* ====================================
+.currnt
+ ==================================== */
+.wrapper.current .inner {
+  background-color: var(--theme-color-secondary);
+}
+
+.wrapper.current .inner .text {
+  color: #fff;
+}
+
+/* ====================================
+primary
+ ==================================== */
+.wrapper.primary .inner {
+  background-color: rgba(22, 174, 103, 0.15);
+  border: 1px solid transparent;
+  /* #16AE67 */
+}
+
+.wrapper.primary .inner {
+  overflow: hidden;
+}
+
+.wrapper.primary .inner::after {
+  background: radial-gradient(circle, rgba(22, 174, 103, 0.75) 10%, transparent 10%) no-repeat 50%;
+}
+
+/* ====================================
+default
+==================================== */
+.wrapper .inner::after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  /* background: radial-gradient(circle, rgba(22, 174, 103, 0.75) 10%, transparent 10%) no-repeat 50%; */
+  transform: scale(10, 10);
+  transition:
+    transform 0.3s,
+    opacity 1s;
+  border-radius: 100px;
+
+  opacity: 0;
+}
+
+/*クリックされたあとの形状の設定*/
+.wrapper .inner:active::after {
+  transform: scale(0, 0);
+  transition: 0s;
+  opacity: 0.3;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 100px;
+  padding: 13px 40px;
+  border: 2px solid #dedede;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.inner:hover {
+  background-color: var(--theme-color-secondary);
+}
+
+.inner:hover .text {
+  color: #fff;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .inner {
+    padding: 7px 11px;
+  }
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .inner {
+    padding: 12.5px 20px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  color: #a3a3a3;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

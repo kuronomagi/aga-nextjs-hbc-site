@@ -1,0 +1,46 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.inner {
+  display: grid;
+  width: 100%;
+}
+
+.text-wrapper {
+}
+
+.h1 {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.3rem;
+  color: var(--theme-color-secondary);
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .h1 {
+    font-size: 24px;
+  }
+}
+
+.h1-span {
+  font-size: 30px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .h1-span {
+    font-size: 19px;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+}

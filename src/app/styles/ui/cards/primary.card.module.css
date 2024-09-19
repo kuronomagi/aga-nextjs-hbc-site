@@ -1,0 +1,134 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid var(--theme-color-quaternary);
+  border-radius: 16px;
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .inner {
+  }
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .inner {
+    max-width: 100%;
+  }
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  background-color: var(--theme-color-quaternary);
+  padding: 12.5px 23px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .head {
+    padding: 12.5px 15px;
+  }
+}
+
+.body {
+  position: relative;
+  padding: 15px 23px 45px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .body {
+    padding: 13px 15px 40px;
+  }
+}
+
+.head-text {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--theme-color-senary);
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.head-text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  margin: auto;
+  border-radius: 100px;
+  background-color: var(--theme-color-secondary);
+}
+
+.text {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--theme-color-septenary);
+}
+
+.list-title {
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--theme-color-secondary);
+  font-weight: bold;
+}
+
+.list-item-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  column-gap: 2%;
+  row-gap: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  column-gap: 8.8px;
+}
+
+.list-item-icon svg {
+  display: inline-block;
+  width: 11px;
+  height: 8px;
+  fill: #f77d7d;
+}
+
+.list-text {
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--theme-color-senary);
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.bottom-wrapper {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .bottom-wrapper {
+    bottom: -2px;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+}

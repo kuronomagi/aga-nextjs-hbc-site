@@ -1,0 +1,574 @@
+html,
+body {
+  width: 100%; /* NOTE: SP メニューを開いた時のズレ防止で必須 */
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+html,
+body {
+  background-color: #F2F5EB;
+  /* background-image: url('~/src/assets/images/base-bg@x2.png'); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+main, article {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* WebKitブラウザ向け */
+::-webkit-scrollbar {
+  width: 0; /* スクロールバーの太さ */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* スクロールバーの背景色 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* スクロールバーのハンドルの色 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* スクロールバーのハンドルのホバー時の色 */
+}
+
+/* .bg-gradation-animate {
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(45deg, #00fcbb, #ee03f4, #def403, #0337f4, #f40303, #f46003);
+  animation: move_gradation 30s ease infinite;
+  background-size: 1200% 1200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(157,237,244,1) 0%, rgba(157,237,244,0) 70%),
+    linear-gradient(135deg, rgba(235,170,236,1) 10%, rgba(235,170,236,0) 80%),
+    linear-gradient(225deg, rgba(170,236,170,1) 10%, rgba(170,236,170,0) 80%),
+    linear-gradient(315deg, rgba(244,234,122,1) 100%, rgba(244,234,122,0) 70%);
+  z-index: -1;
+}
+ */
+/*
+.bg-gradation-animate {
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(45deg, #002134, #002C3D, #0A0113, #560008, #6A0005, #560008, #530307, #7E3401, #7E4200);
+  animation: move_gradation 30s ease infinite;
+  background-size: 1200% 1200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+
+
+/* pc */
+@media screen and (min-width: 1551px) {
+  .u-pc-dis-n {
+    display: none !important;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .u-sp-dis-n {
+    display: none !important;
+  }
+}
+
+
+/* NOTE: SPフレームの線 */
+.contents-wrapper {
+  margin-top: 300px;
+  max-width: 640px;
+  margin: auto;
+  padding-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  .contents-wrapper {
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1551px) {
+  .smart-phone-border-frame {
+    background-clip: padding-box;
+    /* border: 25px solid rgba(255,0,0,0.2); */
+    border: 25px solid rgba(255,255,255,0.2);
+    border-radius: 75px;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    overflow-y: scroll;
+
+    /* NOTE: コンテンツがスマホの枠より上にこないようにする */
+    z-index: 10000;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .smart-phone-border-frame {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-clip: content-box;
+    z-index: 10000;
+    border-radius: 0;
+  }
+}
+
+/* NOTE: 共通の右スペース */
+.l-right-space-container {
+  padding-right: 4%;
+}
+
+.u-link-transition {
+  cursor: pointer;
+  transition: 0.7s;
+}
+.u-link-transition:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 767px) {
+  .u-link-transition:hover {
+    opacity: 1;
+  }
+}
+
+.u-link-with-frosted-glass {
+  position: relative;
+  cursor: pointer;
+  transition: 0.7s;
+  z-index: 1;
+}
+.u-link-with-frosted-glass:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 87%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 2px 0 rgb(0, 0, 0, 0.1);
+}
+
+.bg-gradation-animate {
+  min-width: 100%;
+  min-height: 100%;
+  /* background: linear-gradient(45deg, #002134, #7E4200, #002134, #7E4200, #800200); */
+  /* background: linear-gradient(-45deg, #002134, #7E4200, #002134, #7E4200, #800200); */
+  /* background: linear-gradient(-45deg, rgba(0, 33, 52,1), rgba(126, 66, 0,1), rgba(0, 33, 52,1), rgba(126, 66, 0,1), rgba(128, 2, 0,1)); */
+  background: linear-gradient(-45deg, rgba(128, 2, 0,1),  rgba(0, 33, 52,1), rgba(126, 66, 0,1), rgba(126, 66, 0,1), rgba(0, 33, 52,1) );
+
+  animation: move_gradation 30s ease infinite;
+  background-size: 1200% 1200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+
+  background:
+  linear-gradient(5deg, rgba(0, 33, 52,1) 10%, rgba(0, 33, 52,0) 60%),
+  linear-gradient(32deg, rgba(238, 255, 169, 0.25) 40%, rgba(126, 66, 0,0) 55%),
+  linear-gradient(28deg, rgba(169, 223, 255, 0.5) 20%, rgba(126, 66, 0,0) 70%),
+  linear-gradient(135deg, rgba(0, 33, 52,1) 30%, rgba(0, 33, 52,0) 80%),
+  linear-gradient(225deg, rgba(126, 66, 0,1) 10%, rgba(126, 66, 0,0) 80%),
+  linear-gradient(315deg, rgba(0, 33, 52,1) 100%, rgba(0, 33, 52,0) 70%);
+
+  /* background: linear-gradient(-45deg, rgba(0, 33, 52,1) 0%, rgba(0, 33, 52,0) 70%),
+  linear-gradient(135deg, rgba(126, 66, 0,1) 10%, rgba(126, 66, 0,0) 80%),
+  linear-gradient(225deg, rgba(0, 33, 52,1) 10%, rgba(0, 33, 52,0) 80%),
+  linear-gradient(315deg, rgba(126, 66, 0,1) 100%, rgba(126, 66, 0,0) 70%); */
+  z-index: -1;
+}
+
+@media screen and (min-width: 1551px) {
+  .smart-view-bg-gradation-animate-outer-border {
+    background-clip: padding-box;
+    /* border: 25px solid rgba(255,0,0,0.2); */
+    border: 25px solid rgba(255,255,255,0.2);
+    border-radius: 75px;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+.smart-view-bg-gradation-animate {
+  min-width: 100%;
+  /* min-height: 100%; */
+  /* width: 640px; */
+  padding-top: 50px;
+  /* height: 120vh; */
+
+  /* min-height: 2000px; */
+
+  overflow-y: scroll;
+  border-radius: 50px;
+  /* background: linear-gradient(45deg, #8B0000, #800000); */
+  animation: move_gradation 30s ease infinite;
+  background-size: 120% 120%;
+  /* position: absolute; */
+  /* position: fixed; */
+
+  /* top: 0; */
+  /* left: 0; */
+
+  /* background: linear-gradient(-45deg, #7D0003, rgba(128,0,0,0) 70%),
+    linear-gradient(135deg, rgba(139,0,0,1) 10%, #1b0000 80%); */
+
+    background: rgb(35,87,93);
+    /* 01 */
+    /* background: linear-gradient(45deg, rgba(40, 47, 48, 0) 0%, rgba(227, 246, 255, 0.4) 76%),
+    linear-gradient(19deg, rgba(9, 29, 56, 0.4) 55%, rgb(105, 29, 11) 90%, rgba(99,3,6,1) 100%); */
+
+    /* 02 */
+    /* background: linear-gradient(45deg, rgba(20, 128, 143, 0) 0%, rgba(227, 246, 255, 0.4) 76%),
+    linear-gradient(19deg, rgb(3 8 13 / 40%) 55%, rgb(80 22 8) 90%, rgb(136 2 6) 100%); */
+
+  background: linear-gradient(45deg, rgba(20, 128, 143, 0) 0%, rgb(45 70 82 / 40%) 76%),
+    linear-gradient(19deg, rgb(3 8 13 / 40%) 55%, rgb(80 22 8) 90%, rgb(136 2 6) 100%);
+
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 767px) {
+  .smart-view-bg-animate-wrapper {
+    position: relative;
+    z-index: 21;
+    padding: 20px
+  }
+}
+
+.smart-view-bg-animate {
+  min-width: 100%;
+  /* min-height: 100%; */
+  /* width: 640px; */
+  padding-top: 50px;
+  /* height: 120vh; */
+
+  /* min-height: 2000px; */
+
+  overflow-y: scroll;
+  /* border-radius: 50px; */
+  animation: move_gradation 30s ease infinite;
+  background-size: 120% 120%;
+
+  z-index: -1;
+}
+
+
+.media-smart-view-bg-gradation-animate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 10;
+
+  padding-top: 50px;
+
+  overflow-y: scroll;
+  border-radius: 50px;
+  animation: move_gradation 30s ease infinite;
+  background-size: 120% 120%;
+  /* position: absolute; */
+  /* position: fixed; */
+
+  /* top: 0; */
+  /* left: 0; */
+
+  /* background: linear-gradient(-45deg, #7D0003, rgba(128,0,0,0) 70%),
+    linear-gradient(135deg, rgba(139,0,0,1) 10%, #1b0000 80%); */
+
+    background: rgb(35,87,93);
+    /* 01 */
+    /* background: linear-gradient(45deg, rgba(40, 47, 48, 0) 0%, rgba(227, 246, 255, 0.4) 76%),
+    linear-gradient(19deg, rgba(9, 29, 56, 0.4) 55%, rgb(105, 29, 11) 90%, rgba(99,3,6,1) 100%); */
+
+    /* 02 */
+    /* background: linear-gradient(45deg, rgba(20, 128, 143, 0) 0%, rgba(227, 246, 255, 0.4) 76%),
+    linear-gradient(19deg, rgb(3 8 13 / 40%) 55%, rgb(80 22 8) 90%, rgb(136 2 6) 100%); */
+
+  /* background: linear-gradient(45deg, rgba(20, 128, 143, 0) 0%, rgb(45 70 82 / 40%) 76%),
+    linear-gradient(19deg, rgb(3 8 13 / 40%) 55%, rgb(80 22 8) 90%, rgb(136 2 6) 100%); */
+
+    background: linear-gradient(45deg, rgba(20, 128, 143, 0) 0%, rgb(45 70 82 / 40%) 76%),
+    linear-gradient(48deg, rgb(22, 32, 37) 70%, rgba(221, 0, 7, 0.848) 75%, rgb(108, 43, 82) 85%, rgb(22, 32, 37) 92.5%, rgba(221, 0, 7, 0.848) 100%);
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 767px) {
+  .sp-menu.smart-view-bg-gradation-animate {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #7D0003, rgba(128,0,0,0) 70%),
+    linear-gradient(135deg, rgba(139,0,0,1) 10%, #1b0000 80%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .smart-view-bg-gradation-animate {
+    border-radius: 0;
+    /* NOTE: 4%はSP menuを開いた時の位置がずれるため使用しないこと */
+    /* padding: 60px 0 0 4%; */
+    padding: 60px  0 20px;
+  }
+
+  .sp-menu.smart-view-bg-gradation-animate {
+    border-radius: 0;
+    /* NOTE: 4%はSP menuを開いた時の位置がずれるため使用しないこと */
+    /* padding: 60px 0 0 4%; */
+    padding: 60px 20px 0 20px;
+  }
+
+  .media-smart-view-bg-gradation-animate {
+    border-radius: 0;
+    /* NOTE: 4%はSP menuを開いた時の位置がずれるため使用しないこと */
+    /* padding: 60px 0 0 4%; */
+    padding: 60px  0 20px;
+  }
+}
+
+/* @media screen and (max-width: 767px) {
+  .smart-view-bg-gradation-animate {
+    min-width: 100%;
+    min-height: 100%;
+    height: 2000px;
+    border-radius: 50px;
+    animation: move_gradation 30s ease infinite;
+    background-size: 120% 120%;
+    top: 0;
+    left: 0;
+    background: rgb(35,87,93);
+
+    background: linear-gradient(45deg, rgb(20, 128, 143, 0) 0%, rgb(45 70 82 / 40%) 76%),
+      linear-gradient(19deg, rgb(3 8 13 / 40%) 55%, rgb(80 22 8) 90%, rgb(136 2 6) 100%);
+    z-index: -1;
+  }
+} */
+
+/* ---------------------------------
+歌詞考察
+--------------------------------- */
+.lyrics-consideration-column-cell {
+  width: 100%;
+  max-width: 550px;
+  display: grid;
+
+  grid-template-columns: 120px auto;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.lyrics-consideration-column-photo {
+  width: 120px;
+}
+
+.lyrics-consideration-column-photo img {
+  width: 100%;
+  display: inline-block;
+}
+
+.lyrics-consideration-column-label {
+  font-size: 15px;
+}
+
+.lyrics-consideration-column-text {
+  font-size: 18px;
+}
+
+/* ---------------------------------
+プレイリスト
+--------------------------------- */
+.playlist-column-cell {
+  width: 100%;
+  max-width: 550px;
+  display: grid;
+
+  grid-template-columns: 135px auto;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.playlist-column-photo {
+  width: 135px;
+  border-radius: 5px;
+}
+
+.playlist-column-photo img {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+
+/* ---------------------------------
+Small Media Slider
+--------------------------------- */
+.small-media-slider-container {
+  width: calc(100% + 25px);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+@media screen and (max-width: 767px) {
+  .small-media-slider-container {
+    width: calc(100% + 25px);
+  }
+}
+
+/* スクロールバー */
+@media screen and (min-width: 1551px) {
+  /* スクロールバーの幅と高さを設定する */
+  .small-media-slider-container::-webkit-scrollbar {
+    width: 7.5px;
+    height: 7.5px;
+  }
+
+  .small-media-slider-container::-webkit-scrollbar-thumb {
+    /* スクロールバーの形を設定する */
+    border-radius: 0.25rem;
+
+    /* スクロールバーの色を設定する */
+    --bg-opacity: 0.2;
+    background-color: rgba(255, 255 ,255, 0.15);
+  }
+}
+
+.small-media-slider-wrapper {
+  display: flex;
+  scroll-snap-type: x mandatory;
+}
+
+.small-media-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  white-space: nowrap;
+  padding: 15px 20px 15px 0;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1649px) {
+  .l-header-adjust-container {
+    display: none;
+  }
+}
+
+/* ---------------------------------
+Music Ad Player
+--------------------------------- */
+.c-music-ad-player {
+  margin: 30px 0;
+}
+
+.c-music-ad-player .cf_class {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+  .c-music-ad-player .cf_class {
+    font-size: 13px !important;
+  }
+}
+
+.c-music-ad-player table tbody tr > td:first-child,
+.c-music-ad-player table tbody tr > td:last-child {
+
+}
+
+.c-music-ad-player table tbody tr > td:first-child > .cf_class,
+.c-music-ad-player table tbody tr > td:last-child > .cf_class {
+  transform: scale(0.9);
+}
+
+.c-music-ad-player table tbody tr > td:first-child > .cf_class > .cf_class {
+  top: 6px !important;
+  left: -10px !important;
+}
+
+.c-music-ad-player table tbody tr > td:last-child > .cf_class > .cf_class {
+  top: 8px !important;
+  left: 11px !important;
+}
+
+
+.c-music-ad-player table tbody tr > td:first-child > .cf_class > .cf_class svg,
+.c-music-ad-player table tbody tr > td:last-child > .cf_class > .cf_class svg {
+  width: 17px;
+}
+
+/* ---------------------------------
+for google ads
+--------------------------------- */
+.adsbygoogle {
+  width: 100% !important;
+}
+
+#aswift_2_host {
+  width: 100% !important;
+}
+
+/* ---------------------------------
+Toastify
+--------------------------------- */
+.Toastify .Toastify__toast-container {
+  z-index: 1000 !important;
+}
+
+/* Custom toast styles */
+.custom-toast {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  backdrop-filter: blur(10px);
+}
+
+.custom-toast svg path {
+  fill: #fff !important;
+}
+
+.custom-toast .Toastify__close-button {
+  color: #fff !important; /* 閉じるボタンの色を設定 */
+}
+
+/* ---------------------------------
+down-on-hover
+--------------------------------- */
+.down-on-hover {
+  cursor: pointer;
+  transition: transform .25s linear, opacity .3s cubic-bezier(.5, .02, .35, 1);
+}
+
+.down-on-hover:hover {
+  transform: translateY(4px);
+}

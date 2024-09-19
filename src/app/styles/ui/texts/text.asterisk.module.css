@@ -1,0 +1,37 @@
+.wrapper {
+  position: relative;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+.text {
+  position: relative;
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.text:before {
+  content: '※';
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.red .text {
+  color: var(--red);
+}

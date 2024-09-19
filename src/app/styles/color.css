@@ -1,0 +1,95 @@
+:root {
+  /* theme colors */
+  --theme-color-primary: #16ae67;
+  --theme-color-secondary: #417657;
+  --theme-color-tertiary: #dcf3e7;
+  --theme-color-quaternary: #f2f5eb;
+  --theme-color-quinary: #f6f8f1;
+  --theme-color-senary: #171923;
+  --theme-color-septenary: #72543d;
+  --theme-color-octonary: #a3a3a3;
+  --theme-color-nonary: #f9fbf7;
+  --theme-color-denary: #eaf0ed;
+
+  /* monotone */
+  --black: #000;
+  --charcoal: #000;
+  --white: #fff;
+  --gray: #f3f3f9;
+  --medium-gray: #707070;
+  --charcoal: #333;
+  --obsidian: #2b323c;
+
+  --blue: #038cfe;
+  --sky-blue: #e5f3ff;
+  --red: #ec5252;
+  --purple: #dfccec;
+  --yellow: #ffd700;
+  --orange: #fcc187;
+  --pink: #fee8e9;
+
+  --yellow-bg-g: linear-gradient(100deg, #ffe200 0%, #ffe200 51.5%, #ffcb00 100%);
+
+  --text-opacity-white: rgba(255, 255, 255, 0.8);
+  --text-opacity-yellow: rgba(255, 215, 0, 0.8);
+  --text-opacity-yellow2: rgba(255, 215, 0, 0.5);
+  --text-opacity-yellow3: rgba(255, 215, 0, 0.2);
+
+  --internal-server-error-title: #094067;
+  --internal-server-error-bg: #7fc1ff;
+  --internal-server-error-txt: #5f6c7b;
+
+  --forbidden-title: #fffffe;
+  --forbidden-txt: #fff3ec;
+  --forbidden-bg: #55423d;
+
+  --not-found-title: #d05a6e;
+  --not-found-txt: #594a4e;
+  --not-found-bg: #faeee7;
+
+  --service-unavailable-title: #fffffe;
+  --service-unavailable-txt: #fffffe;
+  --service-unavailable-bg: #516e41;
+
+  --error: #fd3232;
+  --blossom: #fef1f1;
+
+  /* nippon colors */
+  --sora: #58b2dc;
+}
+
+.bg-color-white {
+  background-color: var(--white) !important;
+}
+
+.bg-color-gray {
+  background-color: var(--gray) !important;
+}
+
+.bg-color-gray2 {
+  background-color: var(--gray2) !important;
+}
+
+.bg-color-blue {
+  background-color: var(--blue) !important;
+}
+
+.bg-color-sky-blue {
+  background-color: var(--sky-blue) !important;
+}
+
+.txt-color-blue {
+  color: var(--blue) !important;
+}
+
+.txt-color-obsidian {
+  color: var(--obsidian) !important;
+}
+
+.bd-color-inherit {
+  border-color: inherit !important;
+}
+
+.bd-color-gray {
+  border-color: var(--gray) !important;
+}

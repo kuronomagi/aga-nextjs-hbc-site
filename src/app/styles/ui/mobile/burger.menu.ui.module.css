@@ -1,0 +1,232 @@
+/* ========================
+.burger-table-column2-primary
+======================== */
+.burger-table-column2-primary {
+  position: relative;
+}
+
+.burger-table-column2-primary .item {
+  display: grid;
+  grid-template-columns: 90px calc(100% - 90px);
+  width: 100%;
+}
+
+.burger-table-column2-primary .item:first-child .cell {
+  border-top: none;
+}
+
+.burger-table-column2-primary .item:first-child .cell:first-child {
+  border-top-left-radius: 3px;
+}
+
+.burger-table-column2-primary .item:first-child .cell:last-child {
+  border-top-right-radius: 3px;
+}
+
+.burger-table-column2-primary .item:last-child .cell:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+.burger-table-column2-primary .item:last-child .cell:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+.burger-table-column2-primary .cell {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.burger-table-column2-primary .cell:first-child {
+}
+
+.burger-table-column2-primary .cell:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.burger-table-column2-primary .cell:nth-child(odd) {
+  background-color: #e5e5e5;
+  justify-content: center;
+  padding: 9px 0px;
+}
+
+.burger-table-column2-primary .cell:nth-child(even) {
+  background-color: var(--theme-color-quinary);
+  padding-left: 20px;
+}
+
+.burger-table-column2-primary .title {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  color: var(--theme-color-senary);
+}
+
+.burger-table-column2-primary .text {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.1rem;
+  color: var(--theme-color-senary);
+}
+
+.burger-table-column2-primary .cell-text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.05rem;
+}
+
+.burger-table-column2-primary .tel {
+  pointer-events: none;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .burger-table-column2-primary .tel {
+    pointer-events: inherit;
+  }
+}
+
+/* ========================
+.h2
+======================== */
+.h2 {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--theme-color-senary);
+  padding-left: 20px;
+}
+.h2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: auto 0;
+  background-color: var(--theme-color-secondary);
+  border-radius: 100px;
+}
+
+/* ========================
+.caution-wrapper
+======================== */
+.burger-caution-wrapper {
+  border-radius: 7px;
+  background-color: rgba(247, 125, 125, 0.1);
+  text-align: center;
+  padding: 12px 10px;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .burger-caution-wrapper {
+    padding: 7.75px 10px;
+  }
+}
+
+.burger-caution-text {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f77d7d;
+}
+
+/* ========================
+.burger-content-panel-wrapper
+======================== */
+.burger-content-panel-wrapper {
+}
+
+.burger-content-panel-inner {
+  border-radius: 11px;
+  background-color: var(--theme-color-quinary);
+}
+
+.burger-content-panel-head {
+  padding: 7.75px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #e2eae6;
+}
+
+.burger-content-panel-body {
+  padding: 12.75px 15px;
+}
+
+.burger-content-panel-title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: var(--theme-color-secondary);
+}
+
+.burger-content-map-text-wrapper {
+  text-align: right;
+}
+
+.burger-content-panel-text {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+/* ========================
+.content-map-wrapper
+======================== */
+.burger-content-map-wrapper {
+}
+
+.burger-content-map {
+  width: 100%;
+  height: 144px;
+  border-radius: 8px;
+}
+
+.burger-content-map-text {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+/* ========================
+BURGER PHOTO MENU
+======================== */
+.burger-photo-menus-wrapper {
+}
+.burger-photo-menus-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  column-gap: 2%;
+  row-gap: 10px;
+}
+.burger-photo-menus-link {
+  display: block;
+}
+.burger-photo-menus-image {
+  display: block;
+  height: auto;
+}
+
+/* ========================
+BURGER PHOTO MENU
+======================== */
+.banner-wrapper {
+  display: block;
+}
+
+.banner-link {
+  display: block;
+  width: 100%;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

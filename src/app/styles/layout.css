@@ -1,0 +1,107 @@
+
+/* ------------------------------------------
+l-right-space
+ ------------------------------------------ */
+.l-right-space {
+  padding-right: 0px;
+}
+@media screen and (max-width: 1550px) {
+  .l-right-space {
+    padding-right: 4%;
+  }
+}
+
+
+/* ------------------------------------------
+l-smart-view-container
+ ------------------------------------------ */
+.l-smart-view-container {
+  /* position: fixed;
+  top: 80px;
+  right: 0;
+  left: 0; */
+
+  width: 100%;
+  max-width: 640px;
+  margin: 80px auto 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1550px) {
+  .l-smart-view-container {
+    position: inherit;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .l-smart-view-container {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.l-smart-view-container-inner {
+  top: 105px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* ------------------------------------------
+l-smart-view-frame
+ ------------------------------------------ */
+.l-smart-view-frame-outer {
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter: blur(12px);
+  opacity: 0.25;
+}
+
+.l-smart-view-frame-inner {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 0 0 4%;
+}
+
+@media screen and (min-width: 1551px) {
+  .l-smart-view-frame-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 10;
+
+    max-width: 640px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .l-smart-view-frame-inner {
+    /* position: absolute; */
+    /* top: 100px; */
+    /* left: 4%; */
+    z-index: 10;
+    overflow: hidden;
+  }
+}
+
+/* ------------------------------------------
+l-smart-view-carousel-container
+ ------------------------------------------ */
+.l-smart-view-carousel-container {
+  width: 565px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1550px) {
+  .l-smart-view-carousel-container {
+    width: 96vw;
+  }
+}
+
+/* ------------------------------------------
+sp nav menu
+ ------------------------------------------ */
+.no-scroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}

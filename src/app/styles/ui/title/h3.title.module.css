@@ -1,0 +1,37 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inner {
+  display: grid;
+  width: 100%;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: var(--theme-color-septenary);
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .h3 {
+    font-size: 16px;
+  }
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .h3 {
+    font-size: 15px;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+}

@@ -1,0 +1,30 @@
+
+.text {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 13px;
+  }
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .text {
+    font-size: 13px;
+  }
+}
+
+.text:hover {
+  text-decoration: none;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}

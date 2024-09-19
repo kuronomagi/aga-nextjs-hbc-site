@@ -4,7 +4,7 @@
 
 ## URL
 
-https://hair.tenjin-hifuka.com
+https://aga.tenjin-hbc.jp/
 
 ## 違い
 
@@ -47,10 +47,4 @@ https://www.quickpicturetools.com/jp/rounded_corners/
 
 # リリース履歴
 
-## 240903 12:47~
-
-- トップの「こんな方におすすめ」下のテキスト変更分をリリース
-
-## 240918 10:05~
-
-- トップの男性の施術例を追加
+## 240919 17:00~

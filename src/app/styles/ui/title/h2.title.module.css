@@ -1,0 +1,65 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper.text-black .h2 {
+  color: var(--theme-color-senary);
+}
+
+.inner {
+  display: grid;
+  column-gap: 10px;
+  width: 100%;
+}
+
+.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: -0.001rem;
+  color: var(--theme-color-septenary);
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .h2 {
+    font-size: 20px;
+  }
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .h2 {
+    color: var(--theme-color-senary);
+  }
+}
+
+/* SP 高さ660px以下の時 */
+@media screen and (max-height: 660px) {
+  .h2 {
+    font-size: 20px;
+  }
+}
+
+.label {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Quicksand;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: var(--theme-color-primary);
+}
+/* pc */
+@media screen and (min-width: 768px) {
+  .label {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+}
