@@ -442,7 +442,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                 <Space mt={['30px', '30px']} />
                 <Image
                   className={styles['list-board-image']}
-                  src={LPPhotos.photo001}
+                  src={LPPhotos.photo002}
                   width={640}
                   height={400}
                   alt='こんな方におすすめ'
@@ -563,7 +563,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                   <Space mt={['30px', '30px']} />
                   <Image
                     className={styles['list-board-image']}
-                    src={LPPhotos.photo001}
+                    src={LPPhotos.photo003}
                     width={640}
                     height={400}
                     alt='こんな方におすすめ'
@@ -587,7 +587,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                   <Space mt={['30px', '30px']} />
                   <Image
                     className={styles['list-board-image']}
-                    src={LPPhotos.photo001}
+                    src={LPPhotos.photo004}
                     width={640}
                     height={400}
                     alt='こんな方におすすめ'
@@ -688,7 +688,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                   <Space mt={['30px', '30px']} />
                   <Image
                     className={styles['list-board-image']}
-                    src={LPPhotos.photo001}
+                    src={LPPhotos.photo005}
                     width={640}
                     height={400}
                     alt='こんな方におすすめ'
@@ -696,7 +696,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                   <Space mt={['20px', '20px']} />
                   <Image
                     className={styles['list-board-image']}
-                    src={LPPhotos.photo001}
+                    src={LPPhotos.photo006}
                     width={640}
                     height={400}
                     alt='こんな方におすすめ'
@@ -720,7 +720,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                   <Space mt={['30px', '30px']} />
                   <Image
                     className={styles['list-board-image']}
-                    src={LPPhotos.photo001}
+                    src={LPPhotos.photo007}
                     width={640}
                     height={400}
                     alt='こんな方におすすめ'
@@ -741,7 +741,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
               />
             </div>
 
-            <Space mt={['40px', '50px']} />
+            <Space mt={['40px', '70px']} />
 
             <Image
               className={styles['list-board-image']}
@@ -758,7 +758,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
 多いのではないでしょうか。'
             />
 
-            <Space mt={['40px', '40px']} />
+            <Space mt={['40px', '70px']} />
 
             <section>
               <div className={styles['panel']}>
@@ -812,15 +812,6 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                       </div>
                     </div>
                   </div>
-
-                  <Space mt={['30px', '30px']} />
-                  <Image
-                    className={styles['list-board-image']}
-                    src={LPPhotos.photo001}
-                    width={640}
-                    height={400}
-                    alt='こんな方におすすめ'
-                  />
                 </div>
               </div>
             </section>

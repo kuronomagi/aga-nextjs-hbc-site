@@ -62,6 +62,12 @@ import topText002 from '~/assets/images/top/text-002.png';
 import topText003 from '~/assets/images/top/text-003.png';
 
 import photo001 from '~/assets/images/top/photo-001.png';
+import photo002 from '~/assets/images/top/photo-002.png';
+import photo003 from '~/assets/images/top/photo-003.png';
+import photo004 from '~/assets/images/top/photo-004.png';
+import photo005 from '~/assets/images/top/photo-005.png';
+import photo006 from '~/assets/images/top/photo-006.png';
+import photo007 from '~/assets/images/top/photo-007.png';
 
 export const LPPhotos = {
   // keyvisualGif: keyvisualGif,
@@ -78,4 +84,10 @@ export const LPPhotos = {
   topText003: topText003,
 
   photo001: photo001,
+  photo002: photo002,
+  photo003: photo003,
+  photo004: photo004,
+  photo005: photo005,
+  photo006: photo006,
+  photo007: photo007,
 };
