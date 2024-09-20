@@ -54,7 +54,7 @@ export default function RootLayout(props: React.PropsWithChildren) {
   return (
     <html lang='ja' className={notoSansJP.variable} id='hbc'>
       <Analytics />
-      {/* <ClarityScripts /> */}
+      <ClarityScripts />
 
       {/* <Script id='twitter-widgets'>{`window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
