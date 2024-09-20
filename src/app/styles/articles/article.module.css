@@ -173,18 +173,33 @@ PANEL
 
 .panel-title-red {
   display: inline-block;
-  font-size: 22px;
-  line-height: 16px;
+  font-size: 25px;
+  line-height: 20px;
   letter-spacing: 0.1rem;
   color: #f9456a;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .panel-title-red {
+    font-size: 22px;
+    line-height: 16px;
+  }
 }
 
 .panel-title-black {
   display: inline-block;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 22px;
+  line-height: 20px;
   letter-spacing: 0.1rem;
   color: #171923;
+}
+/* sp */
+@media screen and (max-width: 767px) {
+  .panel-title-black {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 16px;
+  }
 }
 @media screen and (max-width: 355px) {
   .panel-title-red,
