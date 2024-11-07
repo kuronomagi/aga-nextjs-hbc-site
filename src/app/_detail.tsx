@@ -340,7 +340,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
 
                 <RoundedWithArrowButton
                   text='詳しくはこちらから'
-                  onClick={() => null}
+                  href={'https://hair.tenjin-hbc.jp/'}
                   layoutClassName='secondary'
                   sizeClassName='large'
                   className='full-width'
@@ -738,6 +738,7 @@ const Detail = ({ params }: { params: { slug: string; referer?: string | null | 
                 layoutClassName='secondary'
                 sizeClassName='large'
                 className='full-width'
+                gtagSendTo='AW-16579832988/i7DqCMiLv-EZEJzZ8OE9'
               />
             </div>
 
